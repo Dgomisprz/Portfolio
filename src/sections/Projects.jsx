@@ -1,4 +1,4 @@
-import { Tilt } from 'react-tilt';
+
 import { motion } from 'framer-motion';
 import projects from '../constants/projects';
 import { useState, useEffect, useRef } from 'react';
