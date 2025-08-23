@@ -7,11 +7,7 @@ import InteractiveHoverButton from '../components/AnimatedButton';
 
 
 const Projects = () => {
-  const tiltOptions = {
-    max: 25,
-    scale: 1.05,
-    speed: 450,
-  };
+
   const [isVisible, setIsVisible] = useState(false);
       const sectionRef = useRef(null);
   
