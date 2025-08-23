@@ -1,0 +1,46 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "work": "Proyectos",
+    "contact": "Contacto",
+    "name": "Daniel"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "intro": {
+      "heading": "Hola, soy Dani",
+      "paragraphs": [
+        "Creo aplicaciones web que no solo son funcionales, sino también atractivas visualmente.",
+        "Me gusta diseñar interfaces intuitivas y fluidas.",
+        "Siempre busco mejorar mi código y aprender nuevas tecnologías."
+      ]
+    },
+    "stack": {
+      "heading": "Stack",
+      "text": "Me especializo en diversos lenguajes y frameworks, actualmente enfocado en el front-end para crear experiencias web y móviles modernas e intuitivas."
+    },
+    "location": {
+      "heading": "Ubicación",
+      "text": "Estoy en Alicante, España. Estoy abierto a trabajar en remoto en cualquier parte del mundo o mudarme dentro de Europa y España."
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "WatchOver",
+      "description": "Una aplicación web de catálogo de anime donde puedes encontrar tus series favoritas, buscar información, seguir episodios, crear listas y mucho más.",
+      "image": "assets/watchover.png",
+      "link": "https://github.com/Dgomisprz/watchover-laravel",
+      "technologies": ["laravel", "bootstrap", "javascript", "html5", "css3"]
+    },
+    {
+      "id": 2,
+      "title": "NakamaDex",
+      "description": "En desarrollo",
+      "image": "assets/Portada.png",
+      "link": "",
+      "technologies": ["flutter", "visualstudiocode"]
+    }
+  ]
+}
