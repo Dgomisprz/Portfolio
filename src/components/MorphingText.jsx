@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 
-const morphTime = 3.5;
+const morphTime = 2.0;
 const cooldownTime = 0.5;
 
 const useMorphingText = (texts) => {
