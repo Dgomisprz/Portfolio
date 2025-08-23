@@ -75,7 +75,7 @@ const About = () => {
                         </div>
                         
                         <div className="mb-8 md:mb-4">
-                            <InteractiveHoverButton onClick={() => window.open('/public/pdf/DaniGomisCV.pdf', '_blank')}>
+                            <InteractiveHoverButton onClick={() => window.open('pdf/DaniGomisCV.pdf', '_blank')}>
                                 Get my CV
                             </InteractiveHoverButton>
                         </div>
