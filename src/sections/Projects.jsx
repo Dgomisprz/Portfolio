@@ -41,7 +41,7 @@ const Projects = () => {
                         ? 'translate-y-0 opacity-100' 
                         : '-translate-y-full opacity-0'
                 } `}>PROJECTS</h2>
-      <div className={`grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr mt-12 transition-all duration-1000 ease-out delay-600 ${
+      <div className={`grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 auto-rows-fr mt-12 transition-all duration-1000 ease-out ${
                     isVisible 
                         ? '-translate-y-0 opacity-100' 
                         : 'translate-y-full opacity-0'

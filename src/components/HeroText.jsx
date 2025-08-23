@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
-import MorphingText from './MorphingText';
+
+import { FlipWords } from './FlipWords';
 
 const HeroText = () => {
+    const words = ["Front-end", "Mobile", "Web"];
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -24,7 +26,7 @@ const HeroText = () => {
                 </h1>
                 
  
-                <MorphingText texts={["Front-end", "Web", "Mobile"]} />
+                <FlipWords words={words} className="text-5xl  text-purple-600 dark:text-purple-400"/>
                 <h2 className={`text-2xl font-bold transition-all duration-1000 ease-out delay-300 ${
                     isVisible 
                         ? 'translate-x-0 opacity-100' 
@@ -38,7 +40,7 @@ const HeroText = () => {
                         ? 'translate-x-0 opacity-100' 
                         : '-translate-x-full opacity-0'
                 }`}>
-                    I create web applications that are not only functional but also visually appealing.
+                    I create applications that are not only functional but also visually appealing.
                 </p>
             </div>
         </div>

@@ -61,23 +61,27 @@ const About = () => {
                 </div>
 
                 <div className={`relative grid-default-color grid-1 transition-all duration-1000 ease-out delay-300 ${
-                    isVisible 
-                        ? 'translate-x-0 opacity-100' 
+                    isVisible
+                        ? 'translate-x-0 opacity-100'
                         : 'translate-x-full opacity-0'
                 }`}>
-                    
-                    <div className="z-10 w-[50%] mb-20">
-                        <p className="headtext">Stack</p>
-                        <p className="subtext">
-                            I specialize in a variety of languages and frameworks I learned over my study career, now focusing on front-end stack that allows me to create modern and intuitive web and mobile apps.
-                        </p>
+                
+                    <div className="relative z-30 flex flex-col">
+                        <div className="w-full md:w-[70%] mb-6">
+                            <p className="headtext">Stack</p>
+                            <p className="subtext">
+                                I specialize in a variety of languages and frameworks I learned over my study career, now focusing on front-end stack that allows me to create modern and intuitive web and mobile apps.
+                            </p>
+                        </div>
                         
-                        
+                        <div className="mb-8 md:mb-4">
+                            <InteractiveHoverButton onClick={() => window.open('/pdf/CV-DanielGomis.pdf', '_blank')}>
+                                Get my CV
+                            </InteractiveHoverButton>
+                        </div>
                     </div>
-                    <InteractiveHoverButton onClick={() => window.open('/pdf/CV-DanielGomis.pdf', '_blank')}>
-                        Get my CV
-                    </InteractiveHoverButton>
-                    <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+                    
+                    <div className="absolute top-0 right-0 w-[60%] md:w-full h-full md:inset-y-9 md:start-[60%] scale-50 md:scale-125 z-10 opacity-30 md:opacity-100">
                         <Frameworks />
                     </div>
                 </div>
