@@ -18,7 +18,7 @@ const useMorphingText = (texts) => {
       const [current1, current2] = [text1Ref.current, text2Ref.current];
       if (!current1 || !current2) return;
 
-      current2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+      current2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}pgitx)`;
       current2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
 
       const invertedFraction = 1 - fraction;
