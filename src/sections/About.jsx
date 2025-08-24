@@ -1,11 +1,8 @@
-
 import { Frameworks } from "../components/Frameworks";
 
 import { useState, useEffect, useRef } from 'react';
 import InteractiveHoverButton from '../components/AnimatedButton';
 import MapComponent from '../components/MapComponent';
-
-
 
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -16,11 +13,11 @@ const About = () => {
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
-                    observer.disconnect(); // Detenemos la observación una vez que la sección es visible
+                    observer.disconnect(); 
                 }
             },
             {
-                threshold: 0.2, // Activa cuando el 20% de la sección es visible
+                threshold: 0.2, 
             }
         );
 
@@ -103,7 +100,7 @@ const About = () => {
                         
                     </div>
                     <figure className="absolute left-[70%] top-[-60%] sm:top[-80%] sm:-left[60%]">
-                        <MapComponent />
+                        <MapComponent startAnimation={isVisible} />
                     </figure>
                 </div>
 

@@ -2,27 +2,26 @@ import { useEffect } from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// Component to handle map animation
-function MapAnimation() {
+function MapAnimation({ startAnimation }) {
   const map = useMap();
   
   useEffect(() => {
-    // Initial world view
     map.setView([0, 0], 1);
     
-    // Animate zoom to Alicante after 1 second
-    setTimeout(() => {
-      map.flyTo([38.34567591142283, -0.49067320930580116], 12, {
-        duration: 2,
-        easeLinearity: 0.25
-      });
-    }, 1000);
-  }, [map]);
+    if (startAnimation) {
+      setTimeout(() => {
+        map.flyTo([38.34567591142283, -0.49067320930580116], 12, {
+          duration: 2,
+          easeLinearity: 0.25
+        });
+      }, 1000);
+    }
+  }, [map, startAnimation]);
 
   return null;
 }
 
-function MapComponent() {
+function MapComponent({ startAnimation = false }) {
   return (
     <MapContainer
       center={[0, 0]}
@@ -36,9 +35,8 @@ function MapComponent() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <MapAnimation />
+      <MapAnimation startAnimation={startAnimation} />
     </MapContainer>
   );
 }
-
 export default MapComponent;
