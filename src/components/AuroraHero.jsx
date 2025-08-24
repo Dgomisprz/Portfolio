@@ -20,7 +20,7 @@ const AuroraHero = () => {
     <motion.div style={{
         backgroundImage,
       }}
-      className='fixed inset-0 -z-10'>
+      className='absolute inset-0 -z-10'>
         <Meteors number={50} minDuration={8} maxDuration={16} angle={220} />
     </motion.div>
       

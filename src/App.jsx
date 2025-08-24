@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
-import AuroraHero from "./components/AuroraHero";
+
 import Footer from "./sections/Footer";
 import About from "./sections/About"; 
 import Projects from "./sections/Projects";
@@ -12,7 +12,9 @@ const App = () => {
         <Navbar />
         <section id="home">
           <Hero />
+          
         </section>
+        
         <section id="about">
           <About />
         </section>
@@ -20,7 +22,7 @@ const App = () => {
           <Projects />
         </section>
         <Footer />      
-        <AuroraHero />
+        
     </div>
   );
 };

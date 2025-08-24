@@ -1,8 +1,10 @@
 
 import { Frameworks } from "../components/Frameworks";
-import Globe from "../components/Globe";
+
 import { useState, useEffect, useRef } from 'react';
 import InteractiveHoverButton from '../components/AnimatedButton';
+import MapComponent from '../components/MapComponent';
+
 
 
 const About = () => {
@@ -57,7 +59,7 @@ const About = () => {
                         <p className="subtext"> 27-year-old developer passionate about new technologies and cooking. A dedicated worker, I love working in teams and building professional connections among people with shared interests, as well as strengthening and expanding my professional skills.</p>
                         
                     </div>
-                    <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"/>
+                    <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-full sm:h-full bg-gradient-to-t from-indigo"/>
                 </div>
 
                 <div className={`relative grid-default-color grid-1 transition-all duration-1000 ease-out delay-300 ${
@@ -100,8 +102,8 @@ const About = () => {
                         </p>
                         
                     </div>
-                    <figure className="absolute left-[60%] top-[-25%]">
-                        <Globe />
+                    <figure className="absolute left-[70%] top-[-60%] sm:top[-80%] sm:-left[60%]">
+                        <MapComponent />
                     </figure>
                 </div>
 

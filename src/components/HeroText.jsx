@@ -22,18 +22,16 @@ const HeroText = () => {
                         ? 'translate-x-0 opacity-100' 
                         : '-translate-x-full opacity-0'
                 }`}>
-                    Hi I'm Dani
+                    Hi I'm Dani!
                 </h1>
                 
- 
-                <FlipWords words={words} className="text-5xl  text-purple-600 dark:text-purple-400"/>
-                <h2 className={`text-2xl font-bold transition-all duration-1000 ease-out delay-300 ${
-                    isVisible 
-                        ? 'translate-x-0 opacity-100' 
-                        : 'translate-x-full opacity-0'
-                }`}>
+                <div className="text-5xl mx-auto font-normal">
+                    
+                    <FlipWords words={words} className="text-5xl text-purple-900 dark:text-purple-600" /> 
                     Developer
-                </h2>
+                </div>
+                
+                
                 
                 <p className={`text-lg text-neutral-400 text-center max-w-md transition-all duration-1000 ease-out delay-600 ${
                     isVisible 
