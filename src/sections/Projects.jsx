@@ -53,7 +53,7 @@ const Projects = () => {
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="w-full h-64 overflow-hidden rounded-t-lg">
+              <div className="w-full h-32 md:h-64 overflow-hidden rounded-t-lg ">
                    <Lens zoomFactor={1.3} lensSize={170}>
                     <img
                       src={project.image}
@@ -62,9 +62,9 @@ const Projects = () => {
                     />
                   </Lens>
               </div>
-              <div className="p-6 flex flex-col">
+              <div className="p-2 md:p-6 flex flex-col">
                 <h3 className="headtext font-bold">{project.title}</h3>
-                <p className="subtext mt-2 flex-1 line-clamp-3">{project.description}</p>
+                <p className="subtext mt-2 flex-1 ">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                   {project.technologies.map((tech, index) => (
                     <img

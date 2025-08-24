@@ -9,8 +9,8 @@ const projects = [
   },
   {
     id: 2,
-    title: "NakamaDex",
-    description: "Work in progress",
+    title: "NakamaDex (Work in progress)",
+    description: "A One Piece TCG app where you can organize and track your collection, build competitive decks, stay up to date with game updates, and enjoy a simple, visual, and intuitive platform. ",
     image: "assets/Portada.png",
     link: "",
     technologies: ["flutter", "visualstudiocode"],
