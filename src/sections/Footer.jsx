@@ -8,7 +8,7 @@ const Footer = () => {
           <p className="text-sm mb-4">&copy; {new Date().getFullYear()} Website made with Vite + React</p>
           <div className="flex space-x-4">
             <a href="https://github.com/Dgomisprz" className="hover:text-gray-300">GitHub</a>
-            <a href="www.linkedin.com/in/francisco-daniel-gomis-pérez-595b692aa" className="hover:text-gray-300">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/francisco-daniel-gomis-pérez" className="hover:text-gray-300">LinkedIn</a>
           </div>
         </div>
       </div>
