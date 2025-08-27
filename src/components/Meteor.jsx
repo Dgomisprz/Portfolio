@@ -45,3 +45,5 @@ export const Meteors = ({
     </>
   );
 };
+
+export default Meteors;

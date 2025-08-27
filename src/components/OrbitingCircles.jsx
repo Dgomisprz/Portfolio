@@ -55,3 +55,5 @@ export function OrbitingCircles({
     </>
   );
 }
+
+export default OrbitingCircles;

@@ -93,3 +93,5 @@ export function Lens({
     </div>
   );
 }
+
+export default Lens;      

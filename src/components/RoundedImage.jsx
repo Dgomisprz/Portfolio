@@ -9,15 +9,12 @@ const RoundedImage = ({
     showBorder = true,
     className = ""
 }) => {
-    // Same colors as AuroraHero for perfect sync
     const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
     const color = useMotionValue(COLORS[0]);
     
-    // Animation state
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        // Start color animation
         animate(color, COLORS, {
             ease: "easeInOut",
             duration: 5,
@@ -25,7 +22,6 @@ const RoundedImage = ({
             repeatType: "mirror",
         });
 
-        // Trigger entrance animation after component mounts
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 200);
@@ -47,14 +43,12 @@ const RoundedImage = ({
                     ? 'translate-y-0 opacity-100' 
                     : '-translate-y-full opacity-0'
             }`}>
-                {/* Main rounded image */}
                 <img 
                     src={src}
                     alt={alt}
                     className={`${sizeClasses[size]} rounded-full object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105`}
                 />
                 
-                {/* Animated border synced with AuroraHero */}
                 {showBorder && (
                     <motion.div 
                         className="absolute inset-0 rounded-full border-4 opacity-60 group-hover:opacity-90 transition-all duration-300 group-hover:scale-105"
@@ -64,7 +58,6 @@ const RoundedImage = ({
                     />
                 )}
                 
-                {/* Animated glow effect synced with AuroraHero */}
                 {showGlow && (
                     <motion.div 
                         className="absolute inset-0 rounded-full opacity-30 blur-xl group-hover:opacity-50 transition-opacity duration-300 -z-10"

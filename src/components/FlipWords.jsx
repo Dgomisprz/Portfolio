@@ -89,3 +89,5 @@ export const FlipWords = ({
     </AnimatePresence>
   );
 };
+
+export default FlipWords;
