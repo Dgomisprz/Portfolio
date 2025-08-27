@@ -13,7 +13,7 @@ const projects = [
     description: "A One Piece TCG app where you can organize and track your collection, build competitive decks, stay up to date with game updates, and enjoy a simple, visual, and intuitive platform. ",
     image: "assets/Portada.webp",
     link: "",
-    technologies: ["flutter", "visualstudiocode"],
+    technologies: ["flutter", ],
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const projects = [
     description: "An AI-powered email assistant app where you can draft and refine messages, boost productivity with smart suggestions, and enjoy a simple, intuitive, and personal platform. Developed for personal use.",
     image: "assets/correoapp.webp",
     link: "",
-    technologies: ["flutter", "visualstudiocode", "openai" ],
+    technologies: ["flutter", "openai" ],
   },
   // Agrega más proyectos según necesites
 ];
